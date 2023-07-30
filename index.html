@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vertu Motors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cssfiles/indexhomepage.css">
+</head>
+<body>
+  <body>
+    <div id="screenshotContainer">
+    <!-- Desktop Navigation Bar or Menu Bar -->
+    <header class="top-nav">
+      <span class="hambug" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      <a href="index.html">
+        <div class="logo"><img src="images/vertumotorslogo.png" alt="Vertu Motors"></div>
+      </a>
+      <nav class="menu">
+        <ul>
+          <li class="has-dropdown">New Cars
+            <ul class="dropdown">
+              <a href="samplepage.html"><li>Car Model 1</li></a>
+              <a href="samplepage.html"><li>Car Model 2</li></a>
+              <a href="samplepage.html"><li>Car Model 3</li></a>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="has-dropdown">Used Cars
+            <ul class="dropdown">
+              <a href="samplepage.html"><li>Car Model X</li></a>
+              <a href="samplepage.html"><li>Car Model Y</li></a>
+              <a href="samplepage.html"><li>Car Model Z</li></a>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="has-dropdown">Servicing
+            <ul class="dropdown">
+              <a href="samplepage.html"><li>Service Type 1</li></a>
+              <a href="samplepage.html"><li>Service Type 2</li></a>
+              <a href="samplepage.html"><li>Service Type 3</li></a>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li class="has-dropdown">Commercials
+            <ul class="dropdown">
+              <a href="samplepage.html"><li>Commercial Type 1</li></a>
+              <li>Commercial Type 2</li>
+              <a href="samplepage.html"><li>Commercial Type 3</li></a>
+            </ul>
+          </li>
+        </ul>
+        <a href="samplepage.html" style="text-decoration: none;"><div style="font-family: 'Roboto', sans-serif; font-size: 14.5px;">Motability</div></a>
+      </nav>
+
+      <!-- Desktop Top Navigation Search Bar-->
+      <div class="search-bar">
+        <input type="text" placeholder="Search: Make, model or location" id="searchInput">
+        <i class="fas fa-search"></i>
+        <i class="fas fa-microphone"></i>
+        <div class="search-results" id="searchResults"></div>
+      </div>
+
+      <!-- Desktop Top Navigation Icons-->
+      <div class="icons">
+        <div class="find-us">
+          <a href="location.html" class="find-usaref" style="text-decoration: none;">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Find Us</span>
+          </a>
+        </div>
+        <div class="searchbarmob">
+          <i class="fas fa-search" id="openButtonmob"></i>
+        </div>
+        <div class="save" id="screenshotButton">
+          <i class="fas fa-heart"></i>
+          <span>Save</span>
+        </div>
+        <div class="log-in">
+          <a href="loginform.html">
+            <i class="fas fa-user"></i>
+            <span>Log In</span>
+          </a>
+        </div>
+        <div class="phone" onclick="makeCall()">
+          <i class="fas fa-phone"></i>
+        </div>
+      </div>
+    </header>
+
+
+    <!--Mobile Navigation Search Bar, Open search Bar by clicking on serach icon-->
+    <div class="button-containermob">
+      <div class="search-bar-containermob">
+          <div class="search-barmob">
+              <input type="text" placeholder="Search Here">
+          </div>
+      </div>
+    </div>
+    
+
+    <!-- Mobile Navigation Top Bar -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#" class="dropdown-btn">New Cars <span class="arrow">&#9660;</span></a>
+      <ul class="dropdown-list">
+        <li><a href="samplepage.html">Car 1</a></li>
+        <li><a href="samplepage.html">Car 2</a></li>
+        <li><a href="samplepage.html">Car 3</a></li>
+      </ul>
+      <a href="#" class="dropdown-btn">Used Cars <span class="arrow">&#9660;</span></a>
+      <ul class="dropdown-list">
+        <li><a href="samplepage.html">Car A</a></li>
+        <li><a href="samplepage.html">Car B</a></li>
+        <li><a href="samplepage.html">Car C</a></li>
+      </ul>
+      <a href="#" class="dropdown-btn">Servicing <span class="arrow">&#9660;</span></a>
+      <ul class="dropdown-list">
+        <li><a href="samplepage.html">Car A</a></li>
+        <li><a href="samplepage.html">Car B</a></li>
+        <li><a href="samplepage.html">Car C</a></li>
+      </ul>
+      <a href="#" class="dropdown-btn">Commercials <span class="arrow">&#9660;</span></a>
+      <ul class="dropdown-list">
+        <li><a href="samplepage.html">Car A</a></li>
+        <li><a href="samplepage.html">Car B</a></li>
+        <li><a href="samplepage.html">Car C</a></li>
+      </ul>
+      <a href="samplepage.html">Motability</a>
+    </div>
+    
+    <!--Section For Displaying Hero Image on Mobile-->
+    <section class="herobackimghidden">
+      
+    </section>
+
+    <!-- Hero Section for Both Mobile and Desktop-->
+    <section class="hero">
+        <div class="content">
+          <h1 class="h1hero">Explore the new BMW i4 range</h1>
+          <p class="phero">From the cool Trend and SUV-inspired Active to the sporty ST-Line, the eighth generation Fiesta Impress across the range</p>
+          <a href="samplepage.html"><button class="btn">Book a test drive</button></a>
+        </div>
+    </section>
+
+    
+    <!-- BMW I4 Trims Section for Mobile to display only three cars vertically-->
+    <div class="containermob">
+      <h1 class="h1carcolmob">BMW i4 Trims</h1>
+
+      <div class="car-containermob">
+
+        <div class="carmob">
+          <img src="images/carblue.png" alt="BMW i4 M50">
+          <h2>M50</h2>
+          <p class="price">From £65,795</p>
+          <ul>
+            <li>Velour Floor Mats</li>
+            <li>Sun Protection Glass</li>
+            <li>Automatic Stability Control(ASC)</li>
+            <li>Adaptive M Suspension</li>
+            <li>Storage for wireless charging</li>
+            <li>Cruise Control with brake assist</li>
+            <li>Automatic tail gate operation</li>
+          </ul>
+        </div>
+
+        <div class="carmob">
+          <img src="images/carwhite.png" alt="BMW i4 M Sport">
+          <h2>M Sport</h2>
+          <p class="price">From £54,980</p>
+          <ul>
+            <li>Velour Floor Mats</li>
+            <li>Rain sensor including auto headlights activation</li>
+            <li>Automatic Stability Control(ASC)</li>
+            <li>Standard Suspension</li>
+            <li>Electric Power Steering (EPS) with Servotronic</li>
+            <li>Automatic tail gate operation</li>
+          </ul>
+        </div>
+
+        <div class="carmob">
+          <img src="images/carblack.png" alt="BMW i4 M Sport">
+          <h2>Sport</h2>
+          <p class="price">From £53,480</p>
+          <ul>
+            <li>Velour Floor Mats</li>
+            <li>Rain sensor including auto headlights activation</li>
+            <li>Automatic Stability Control(ASC)</li>
+            <li>Standard Suspension</li>
+            <li>Electric Power Steering (EPS) with Servotronic</li>
+            <li>Automatic tail gate operation</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- BMW I4 Trims Section for Desktop for display more than three cars by scrolling left or right using buttons-->
+    <div class="container">
+        <h1 class="h1carcol">BMW i4 Trims</h1>
+
+        <div class="car-container" id="scrollable-container">
+
+          <div class="car">
+            <img src="images/carblue.png" alt="BMW i4 M50">
+            <h2>M50</h2>
+            <p class="price">From £65,795</p>
+            <ul>
+              <li>Velour Floor Mats</li>
+              <li>Sun Protection Glass</li>
+              <li>Automatic Stability Control(ASC)</li>
+              <li>Adaptive M Suspension</li>
+              <li>Storage for wireless charging</li>
+              <li>Cruise Control with brake assist</li>
+              <li>Automatic tail gate operation</li>
+            </ul>
+          </div>
+
+          <div class="car">
+            <img src="images/carwhite.png" alt="BMW i4 M Sport">
+            <h2>M Sport</h2>
+            <p class="price">From £54,980</p>
+            <ul>
+              <li>Velour Floor Mats</li>
+              <li>Rain sensor including auto headlights activation</li>
+              <li>Automatic Stability Control(ASC)</li>
+              <li>Standard Suspension</li>
+              <li>Electric Power Steering (EPS) with Servotronic</li>
+              <li>Automatic tail gate operation</li>
+            </ul>
+          </div>
+
+          <div class="car">
+            <img src="images/carblack.png" alt="BMW i4 M Sport">
+            <h2>Sport</h2>
+            <p class="price">From £53,480</p>
+            <ul>
+              <li>Velour Floor Mats</li>
+              <li>Rain sensor including auto headlights activation</li>
+              <li>Automatic Stability Control(ASC)</li>
+              <li>Standard Suspension</li>
+              <li>Electric Power Steering (EPS) with Servotronic</li>
+              <li>Automatic tail gate operation</li>
+            </ul>
+          </div>
+
+          <div class="car">
+            <img src="images/carwhite.png" alt="BMW i4 M Sport">
+            <h2>M Sport</h2>
+            <p class="price">From £65,795</p>
+            <ul>
+              <li>Velour Floor Mats</li>
+              <li>Sun Protection Glass</li>
+              <li>Automatic Stability Control(ASC)</li>
+              <li>Adaptive M Suspension</li>
+              <li>Storage for wireless charging</li>
+              <li>Cruise Control with brake assist</li>
+              <li>Automatic tail gate operation</li>
+            </ul>
+          </div>
+
+          <div class="car">
+            <img src="images/carblue.png" alt="BMW i4 M Sport">
+            <h2>M Sport</h2>
+            <p class="price">From £65,795</p>
+            <ul>
+              <li>Velour Floor Mats</li>
+              <li>Sun Protection Glass</li>
+              <li>Automatic Stability Control(ASC)</li>
+              <li>Adaptive M Suspension</li>
+              <li>Storage for wireless charging</li>
+              <li>Cruise Control with brake assist</li>
+              <li>Automatic tail gate operation</li>
+            </ul>
+          </div>
+
+          <div class="car">
+            <img src="images/carwhite.png" alt="BMW i4 M Sport">
+            <h2>M Sport</h2>
+            <p class="price">From £65,795</p>
+            <ul>
+              <li>Velour Floor Mats</li>
+              <li>Sun Protection Glass</li>
+              <li>Automatic Stability Control(ASC)</li>
+              <li>Adaptive M Suspension</li>
+              <li>Storage for wireless charging</li>
+              <li>Cruise Control with brake assist</li>
+              <li>Automatic tail gate operation</li>
+            </ul>
+          </div>
+
+          <div class="car">
+            <img src="images/carwhite.png" alt="BMW i4 M Sport">
+            <h2>M Sport</h2>
+            <p class="price">From £65,795</p>
+            <ul>
+              <li>Velour Floor Mats</li>
+              <li>Sun Protection Glass</li>
+              <li>Automatic Stability Control(ASC)</li>
+              <li>Adaptive M Suspension</li>
+              <li>Storage for wireless charging</li>
+              <li>Cruise Control with brake assist</li>
+              <li>Automatic tail gate operation</li>
+            </ul>
+          </div>
+
+          <div class="car">
+            <img src="images/carblue.png" alt="BMW i4 M Sport">
+            <h2>M Sport</h2>
+            <p class="price">From £65,795</p>
+            <ul>
+              <li>Velour Floor Mats</li>
+              <li>Sun Protection Glass</li>
+              <li>Automatic Stability Control(ASC)</li>
+              <li>Adaptive M Suspension</li>
+              <li>Storage for wireless charging</li>
+              <li>Cruise Control with brake assist</li>
+              <li>Automatic tail gate operation</li>
+            </ul>
+          </div>
+
+          <div class="car">
+            <img src="images/carblack.png" alt="BMW i4 M Sport">
+            <h2>M Sport</h2>
+            <p class="price">From £65,795</p>
+            <ul>
+              <li>Velour Floor Mats</li>
+              <li>Sun Protection Glass</li>
+              <li>Automatic Stability Control(ASC)</li>
+              <li>Adaptive M Suspension</li>
+              <li>Storage for wireless charging</li>
+              <li>Cruise Control with brake assist</li>
+              <li>Automatic tail gate operation</li>
+            </ul>
+          </div>
+
+        </div>
+        <button id="scroll-left-btn">&#8249;</button>
+        <button id="scroll-right-btn">&#8250;</button>
+      </div>
+
+      
+      <!-- This Section is used to display image in mobile for section 3(Explore the new BMW Interior)-->
+      <div class="imgmobile">
+        <img src="images/bmwinterior.png" alt="BMW Interior">
+      </div>
+
+      <!-- Section 3(Explore the new BMW Interior)-->
+      <div class="container3">
+        <div class="left">
+          <h1>Explore the new BMW Interior</h1>
+          <p>The interior of a BMW showcases the brand's dedication to luxury and craftsmanship.
+             With premium materials such as leather and wood trims, the interior exudes elegance. 
+             Driver-focused design ensures intuitive controls and a comfortable driving 
+             experience with adjustable seats and a user-friendly infotainment system like iDrive, which integrates 
+             seamlessly with smartphones.</p>
+          <a href="samplepage.html"><button class="btn">Request a Personalised Video</button></a>
+        </div>
+        <div class="right">
+          <img src="images/bmwinterior.png" alt="BMW Interior">
+        </div>
+      </div>
+
+      <!--This Section is used to display image in mobile for Section 4(Electrifying Performance with BMW i4)-->
+      <div class="imgmobile">
+        <img src="images/carcharge.png" alt="BMW Interior">
+      </div>
+
+      <!-- Section 4(Electrifying Performance with BMW i4) -->
+      <div class="container4">
+        <div class="left">
+          <img src="images/carcharge.png" alt="BMW Interior">
+        </div>
+        <div class="right">
+          <h1>Electrifying Performance with BMW i4</h1>
+          <p>The interior of a BMW showcases the brand's dedication to luxury and craftsmanship.
+            With premium materials such as leather and wood trims, the interior exudes elegance.</p>
+          <div class="innerleft">
+            <h1 style="font-size: 35px;">02:05 hr</h1>
+            <p>Charging at home for a Range of 62 miles</p>
+          </div>    
+          <div class="innerright">
+            <h1 style="font-size: 35px;">365</h1>
+            <p>Electric Range in Miles</p>
+          </div>
+          <a href="samplepage.html"><button class="btn">Book a Test Drive</button></a>
+        </div>
+      </div>
+
+    </div>
+      
+      <!-- Java Script Libraries for index home page-->
+      <script src="javascript/indexhome.js"></script>
+      <!-- font-awesome icons JS library-->
+      <script src="https://kit.fontawesome.com/38c54d16e2.js" crossorigin="anonymous"></script>
+
+      <!-- JS library to download current view page as JPG image file, Click on heart symbol save button to save current view as JPG-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+</body>
+</html>

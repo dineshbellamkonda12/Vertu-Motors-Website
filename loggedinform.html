@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Page</title>
+    <link rel="stylesheet" href="cssfiles/loginform.css">
+</head>
+<body>
+    <!-- Display Username from Session storage-->
+    <div class="container">
+        <h2>You Are Logged In Successfully</h2>
+        <p>
+            Welcome: <span id="displayUsername"></span>
+        </p>
+    </div>
+
+    <div class="container">
+        <a href="index.html">
+            <button>Logout</button>
+        </a>
+    </div>
+
+    <!-- Script For Getting Username from the Session Storage-->
+    <script>
+        const username = sessionStorage.getItem('username');
+        const displayUsername = document.getElementById('displayUsername');
+        displayUsername.textContent = username;
+    </script>
+</body>
+</html>

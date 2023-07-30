@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="cssfiles/loginform.css">
+</head>
+<body>
+    <!-- Display Login Form -->
+    <div class="container">
+        <h2>Enter Username and Password</h2>
+        <form onsubmit="return saveUsername()">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+     
+    <!-- Script For Storing Username in Session Storage locally -->
+    <script>
+        function saveUsername() {
+            const username = document.getElementById('username').value;
+            sessionStorage.setItem('username', username);
+            window.location.href = 'loggedinform.html';
+            return false; // Prevent the form from actually submitting
+        }
+    </script>
+</body>
+</html>

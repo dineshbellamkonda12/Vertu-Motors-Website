@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Cars</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f8f8f8;
+            color: #333;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Car container */
+        .car-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .buttonp {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .buttonp button{
+            padding: 20px;
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        /* Car card */
+        .car-card {
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .car-card img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .car-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .car-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Sample Car Page</h1>
+    <div class="car-container">
+        <div class="car-card">
+            <img src="images/carblack.png" alt="Car 1">
+            <h2>BMW</h2>
+            <p>This is a Beautiful Car With High Price</p>
+        </div>
+        <div class="car-card">
+            <img src="images/carblue.png" alt="Car 2">
+            <h2>Mercedes Benz</h2>
+            <p>This is a Beautiful Car With High Price</p>
+        </div>
+        <div class="car-card">
+            <img src="images/carwhite.png" alt="Car 3">
+            <h2>Audi</h2>
+            <p>This is a Beautiful Car With High Price</p>
+        </div>
+    </div>
+
+    <div class="buttonp">
+        <a href="index.html"><button>Back to Home</button></a>
+    </div>
+</body>
+</html>
