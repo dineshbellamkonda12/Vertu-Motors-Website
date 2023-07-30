@@ -1,6 +1,7 @@
 #Vertu Motors Website   
 
 - This website is optimized for both mobile and desktop(Full Screen) viewing.
+- This webpage has been created using Visual Studio Code and Google Chrome.
 - Please open index.html to open the main home page.
 
 - Desktop (Full Screen View)
