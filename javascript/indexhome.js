@@ -182,3 +182,56 @@ function makeCall() {
   window.location.href = "tel:12374774";
 }
 
+
+//Microphone Script to listen to our voice
+const micButton = document.getElementById('micButton');
+const resultContainer = document.getElementById('resultContainer');
+const resultText = document.getElementById('resultText');
+const closeButton = document.getElementById('closeButton');
+let recognition;
+
+// Check if the browser supports speech recognition
+if ('webkitSpeechRecognition' in window) {
+    recognition = new webkitSpeechRecognition();
+    recognition.continuous = true;
+    recognition.interimResults = true;
+
+    recognition.onstart = () => {
+        resultText.textContent = 'Listening...';
+    };
+
+    recognition.onerror = (event) => {
+        console.error('Speech recognition error occurred:', event.error);
+        resultText.textContent = 'Error occurred during speech recognition. Please try again.';
+    };
+
+    recognition.onresult = (event) => {
+        const result = event.results[event.results.length - 1][0].transcript;
+        resultText.textContent = result;
+        closeButton.style.display = 'inline-block';
+        resultContainer.classList.add('show');
+    };
+
+    micButton.addEventListener('click', () => {
+        if (!resultContainer.classList.contains('show')) {
+            recognition.start();
+            resultText.textContent = 'Listening...';
+            closeButton.style.display = 'none';
+            resultContainer.classList.add('show');
+        } else {
+            recognition.stop();
+            resultText.textContent = 'Speak Something';
+            closeButton.style.display = 'none';
+            resultContainer.classList.remove('show');
+        }
+    });
+
+    closeButton.addEventListener('click', () => {
+        recognition.stop();
+        resultText.textContent = 'Speak Something';
+        closeButton.style.display = 'none';
+        resultContainer.classList.remove('show');
+    });
+} else {
+    resultText.textContent = 'Speech recognition is not supported in this browser.';
+}

@@ -145,6 +145,32 @@ body {
   cursor: pointer;
 }
 
+/* Microphone Voice Bar Design */
+#resultContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  z-index: 9999;
+}
+
+#resultContainer.show {
+  display: block;
+}
+
+#closeButton {
+  display: none;
+}
+
+#resultText {
+  font-size: 18px;
+}
+
 
 .button-containermob { 
   display: none;

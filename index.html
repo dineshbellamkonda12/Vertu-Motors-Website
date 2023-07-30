@@ -60,7 +60,7 @@
       <div class="search-bar">
         <input type="text" placeholder="Search: Make, model or location" id="searchInput">
         <i class="fas fa-search"></i>
-        <i class="fas fa-microphone"></i>
+        <i class="fas fa-microphone" id="micButton"></i>
         <div class="search-results" id="searchResults"></div>
       </div>
 
@@ -90,6 +90,12 @@
         </div>
       </div>
     </header>
+
+    <!-- Display Microphone Voice Results -->
+    <div id="resultContainer">
+      <button id="closeButton">X</button>
+      <p id="resultText"></p>
+    </div>
 
 
     <!--Mobile Navigation Search Bar, Open search Bar by clicking on serach icon-->
