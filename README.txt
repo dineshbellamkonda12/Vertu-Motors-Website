@@ -1,6 +1,6 @@
 #Vertu Motors Website   
 
-- This Website is compatible only for mobile and desktop(Full Screen)
+- This website is optimized for both mobile and desktop(Full Screen) viewing
 - Please open index.html to open the main home page
 
 - Desktop (Full Screen View)
