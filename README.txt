@@ -1,5 +1,6 @@
 #Vertu Motors Website   
 
+- Please visit https://exquisite-crisp-a0fe53.netlify.app/ to view the live website.
 - This website is optimized for both mobile and desktop(Full Screen) viewing.
 - This webpage has been created using using HTML 5, CSS 3 and Plain Vanilla Javascript.
 - Clone the repository and open index.html to run the application.
