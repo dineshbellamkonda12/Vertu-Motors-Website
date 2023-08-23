@@ -1,8 +1,8 @@
 #Vertu Motors Website   
 
 - This website is optimized for both mobile and desktop(Full Screen) viewing.
-- This webpage has been created using Visual Studio Code and Google Chrome.
-- Please open index.html to open the main home page.
+- This webpage has been created using using HTML 5, CSS 3 and Plain Vanilla Javascript.
+- Clone the repository and open index.html to run the application.
 
 - Desktop (Full Screen View)
     - When you type text in the search bar, it will present you with corresponding results. These results are retrieved from an array called "searchResultsData" inside the "indexhome.js" file.
